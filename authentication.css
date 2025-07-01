@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+  background-color: #eff4ff;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #224cd7, #7d23ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  width: 30%;
+  min-width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2 {
+  margin-bottom: 0.5rem;
+}
+
+form .message {
+  color: gray;
+  letter-spacing: 1px;
+}
+
+#method {
+  background-color: #f3f4f6;
+  margin-top: 1rem;
+  width: 90%;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#method button {
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#method .unclicked{
+    background-color: rgba(84, 84, 84, 0.207);
+}
+
+.main {
+  width: 140%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-60px);
+  gap: 1.2rem;
+}
+
+label {
+  text-align: left;
+  width: 100%;
+}
+
+label h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+label input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+  color: gray;
+}
+
+.helper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #224cd7, #7d23ce);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  width: 80%;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#alternate {
+  text-align: center;
+  width: 100%;
+}
+
+#alternate p {
+  margin: 1rem 0 0.5rem;
+}
+
+#alternate button {
+  background-color: #224cd7;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#footer {
+  color: gray;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
