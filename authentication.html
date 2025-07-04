@@ -13,76 +13,83 @@
     <h2>Sign in to your account or create a new one</h2>
   </header>
 
-  <form>
-    <h2>Get Started</h2>
-    <p class="message">Choose your preferred method to continue</p>
-
-    <div id="method">
-      <button type="button" id="in" class="unclicked">Sign In</button>
-      <button type="button" id="up" >Sign Up</button>
+  <div id="auth-section">
+    <div id="welcome-msg" style="display:none">
+      <h2>Welcome, <span id="user-email"></span>!</h2>
+      <button id="logout-btn">Logout</button>
     </div>
 
-    <div id="sign-in">
-      <div class="main">
-        <label for="signin-email">
-          <h3>Email Address</h3>
-          <input type="email" id="signin-email" placeholder="Enter your email" required />
-        </label>
+    <form id="auth-form">
+      <h2>Get Started</h2>
+      <p class="message">Choose your preferred method to continue</p>
 
-        <label for="signin-password">
-          <h3>Password</h3>
-          <input type="password" id="signin-password" placeholder="Enter your password" required />
-        </label>
+      <div id="method">
+        <button type="button" id="in" class="unclicked">Sign In</button>
+        <button type="button" id="up">Sign Up</button>
       </div>
 
-      <label class="helper">
-        <div>
-          <input type="checkbox" id="remember-me" /> <span> Remember me</span> 
-        <a href="#">Forgot password?</a>
+      <div id="sign-in">
+        <div class="main">
+          <label for="signin-email">
+            <h3>Email Address</h3>
+            <input type="email" id="signin-email" placeholder="Enter your email" required />
+          </label>
+
+          <label for="signin-password">
+            <h3>Password</h3>
+            <input type="password" id="signin-password" placeholder="Enter your password" required />
+          </label>
         </div>
-      </label>
 
-      <button type="submit">Sign In</button>
-    </div>
-
-    <div id="sign-up" style="display: none;">
-      <div class="main">
-        <label for="signup-name">
-          <h3>Full Name</h3>
-          <input type="text" id="signup-name" placeholder="Enter your full name" required />
+        <label class="helper">
+          <div>
+            <input type="checkbox" id="remember-me" /> <span> Remember me</span> 
+          <a href="#">Forgot password?</a>
+          </div>
         </label>
 
-        <label for="signup-email">
-          <h3>Email Address</h3>
-          <input type="email" id="signup-email" placeholder="Enter your email" required />
-        </label>
-
-        <label for="signup-password">
-          <h3>Password</h3>
-          <input type="password" id="signup-password" placeholder="Create password" required />
-        </label>
-
-        <label for="signup-confirm">
-          <h3>Confirm Password</h3>
-          <input type="password" id="signup-confirm" placeholder="Confirm your password" required />
-        </label>
+        <button type="submit" id="signin-btn">Sign In</button>
       </div>
 
-      <label class="helper">
-        <div>
-          <input type="checkbox" id="terms" required /> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+      <div id="sign-up" style="display: none;">
+        <div class="main">
+          <label for="signup-name">
+            <h3>Full Name</h3>
+            <input type="text" id="signup-name" placeholder="Enter your full name" required />
+          </label>
+
+          <label for="signup-email">
+            <h3>Email Address</h3>
+            <input type="email" id="signup-email" placeholder="Enter your email" required />
+          </label>
+
+          <label for="signup-password">
+            <h3>Password</h3>
+            <input type="password" id="signup-password" placeholder="Create password" required />
+          </label>
+
+          <label for="signup-confirm">
+            <h3>Confirm Password</h3>
+            <input type="password" id="signup-confirm" placeholder="Confirm your password" required />
+          </label>
         </div>
-      </label>
 
-      <button type="submit">Create Account</button>
-    </div>
+        <label class="helper">
+          <div>
+            <input type="checkbox" id="terms" required /> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+          </div>
+        </label>
 
-    <div id="alternate">
-      <p>------------------ or continue with ------------------</p>
-      <button type="button"><span></span> Google</button>
-      <button type="button"><span></span> Facebook</button>
-    </div>
-  </form>
+        <button type="submit" id="signup-btn">Create Account</button>
+      </div>
+
+      <div id="alternate">
+        <p>------------------ or continue with ------------------</p>
+        <button type="button"><span></span> Google</button>
+        <button type="button"><span></span> Facebook</button>
+      </div>
+    </form>
+  </div>
 
   <p id="footer">By continuing, you agree to our Terms of Service and Privacy Policy</p>
 </body>
